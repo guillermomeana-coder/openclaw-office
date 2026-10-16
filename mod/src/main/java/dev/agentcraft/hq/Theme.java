@@ -1,5 +1,6 @@
 package dev.agentcraft.hq;
 
+import dev.agentcraft.block.ModBlocks;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -104,7 +105,7 @@ public record Theme(
         // Floor
         Blocks.SMOOTH_STONE.defaultBlockState(),
         Blocks.POLISHED_ANDESITE.defaultBlockState(),
-        Blocks.WHITE_CONCRETE.defaultBlockState(),
+        St.concrete(DyeColor.WHITE),
         Blocks.STONE_BRICKS.defaultBlockState(),
         // Roof
         Blocks.QUARTZ_STAIRS,
